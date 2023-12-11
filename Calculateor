@@ -1,0 +1,38 @@
+#**********************************HOW TO CREATE A BUILD CALCULATOR
+
+#1.ADD
+#2.SUBTRACT
+#3.MULTIPLY
+#4.DIVIDE
+print("Select an operation to perform")
+print("1. ADD")
+print("2. SUBTRACT")
+print("3. MULTIPLY")
+print("4. DIVIDE")
+
+operation = input()
+
+if operation == "1": # PERFROM ADDITION
+  num1 = input("Enter first number: ")
+  num2 = input("Enter second number: ")
+  print("The sum is " + str(int(num1) + int(num2)))
+elif operation == "2": # PERFROM SUBSTRACTION
+    num1 = input("Enter first number: ")
+    num2 = input("Enter second number: ")
+    print("The difference is " + str(int(num1) - int(num2)))
+elif operation == "3": # PERFROM MULTIPLICATION
+    num1 = input("Enter first number: ")
+    num2 = input("Enter second number: ")
+    print("The product  is " + str(int(num1) *  int(num2)))
+elif operation == "4": # PERFROM DIVISION
+    num1 = input("Enter first number: ")
+    num2 = input("Enter second number: ")
+    print("The result is " + str(int(num1) / int(num2)))
+elif operation == "5": # PERFROM SQUARE ROOT
+    num1 = int(input("Enter first number: "))
+    print("The squareroot is %f " %(math.sqrt(num)))
+elif operation == "6": # SQUARE A NUMBER
+    num1 = int(input("Enter first number: "))
+    print("The result is %d " %(pow(num, 2)))
+else:
+  print("Invalid Entry")
